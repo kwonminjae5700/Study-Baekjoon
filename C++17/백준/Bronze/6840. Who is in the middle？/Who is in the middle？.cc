@@ -6,7 +6,7 @@ int main() {
     for(int i=0;i<3;i++) scanf("%d", &num[i]);
     
     for(int i=0;i<3;i++) {
-        for(int j=1;j<3;j++) {
+        for(int j=0;j<3;j++) {
             if(num[i]>num[j]) {
                 temp = num[i];
                 num[i] = num[j];
@@ -15,7 +15,7 @@ int main() {
         }
     }
     
-    printf("%d", num[2]);
+    printf("%d", num[1]);
     
     
     return 0;
