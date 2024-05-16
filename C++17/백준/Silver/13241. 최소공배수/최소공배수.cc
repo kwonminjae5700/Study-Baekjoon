@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-long long int LCM(int n1, int n2) {
+long long int GCD(int n1, int n2) {
     int result;
     
     while(n1%n2!=0) {
@@ -17,7 +17,7 @@ int main() {
     
     scanf("%lld %lld", &A, &B);
     
-    printf("%lld", A*B/LCM(A, B));
+    printf("%lld", A*B/GCD(A, B));
     
     return 0;
 }
