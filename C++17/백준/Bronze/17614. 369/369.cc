@@ -7,21 +7,16 @@ int main() {
     
     for(int i=1;i<=N;i++) {
         temp = i;
-        while(1) {
-            if(temp<10) {
-                if(temp/3==1) {
-                    clap++;
-                }
-                
-                break;
+        while(temp > 0) {
+            int num = temp % 10;
+            if(num % 3 == 0 && num != 0){
+                clap++;
             }
-            
-            if((temp%10)/3==1) clap++;
-            temp/=10;
+            temp = temp / 10;
         }
     }
     
-    printf("%d", clap-1);
+    printf("%d", clap);
     
     return 0;
 }
