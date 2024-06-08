@@ -8,7 +8,7 @@ int main() {
     for(int i=2;i<=N;i++) arr[i]=i;
 
     for(int i=2;i<=N;i++) {
-        if(arr[i]==0) continue;
+        
         
         for(int j=1;i*j<=N;j++) {
             if(arr[i*j]!=0) {
