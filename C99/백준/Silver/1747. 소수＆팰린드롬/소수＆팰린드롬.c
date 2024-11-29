@@ -18,7 +18,7 @@ int palindrome(int num) {
 }
 
 int main() {
-    int N, flag=0;
+    int N;
 
     scanf("%d", &N);
     int num[2000001]={0}, prime[200001], idx=0;
@@ -39,7 +39,6 @@ int main() {
         while(1) {
             if(palindrome(prime[idx])) {
                 printf("%d ", prime[idx]);
-                flag = 1;
                 break;
             }
 
